@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Hook.js Loading</title>
+    <script>
+        function loadScript(url) {
+            const script = document.createElement('script');
+            script.src = url;
+            script.onload = () => console.log('Script loaded successfully.');
+            document.head.appendChild(script);
+        }
+        loadScript('http://127.0.0.1:3000/hook.js');
+    </script>
+</head>
+<body>
+    <h1>Dynamic Loading of Hook.js</h1>
+    <p>This example shows how to dynamically load a JavaScript file using inline script.</p>
+</body>
+</html>
